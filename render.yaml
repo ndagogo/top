@@ -1,8 +1,8 @@
 databases:
-  - name: render-deploy
+  - name: render_deploy
     ipAllowList: []
     plan: free
-    user: render-deploy
+    user: render_deploy
 
 services:
   - type: web
@@ -16,5 +16,5 @@ services:
         sync: false
       - key: DATABASE_URL
         fromDatabase:
-          name: render-deploy
+          name: render_deploy
           property: connectionString
